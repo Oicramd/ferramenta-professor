@@ -286,6 +286,21 @@ function editarAlunos() {
   alert("Aluno atualizado!");
 }
 
+function listarAlunos() {
+  const lista = document.getElementById("listaAlunos");
+
+  if (!lista) return;
+
+  lista.innerHTML = "";
+
+  alunos.forEach((nome, index) => {
+    const li = document.createElement("li");
+    li.textContent = nome;
+    lista.appendChild(li);
+  });
+}
+
+
 function clonarTurma() {
   if (!turmaAtiva) {
     alert("Selecione uma turma.");
