@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ferramenta do Professor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>📘 Ferramenta de Apoio ao Professor</h1>
+
+<div id="login" class="aba">
+  <h2>Login</h2>
+  <input id="loginNome" placeholder="Nome">
+  <input id="loginSenha" type="password" placeholder="Senha">
+  <button onclick="login()">Entrar</button>
+</div>
+
+<div class="abas">
+  <button onclick="mostrarAba('unidade')">📘 Unidade</button>
+  <button onclick="mostrarAba('turma')">🏫 Turma</button>
+  <button onclick="mostrarAba('aulas')">📚 Aulas</button>
+  <button onclick="mostrarAba('acompanhamento')">📝 Acompanhamento</button>
+  <button onclick="mostrarAba('relatorios')">📊 Relatórios</button>
+</div>
+
+
+
+<div id="inicio" class="aba">
+  <h2>Painel Inicial</h2>
+  <p>Use o menu acima.</p>
+</div>
+
+<div id="unidade" class="aba">
+  <h2>Unidade</h2>
+  <input id="nomeUnidade" placeholder="Nome da unidade">
+  <input id="valorUnidade" type="number" placeholder="Valor">
+  <input id="inicioUnidade" type="date">
+  <input id="fimUnidade" type="date">
+  <button onclick="salvarUnidade()">Salvar</button>
+  <p>Unidade ativa: <span id="resumoUnidade">Nenhuma</span></p>
+</div>
+
+<div id="turma" class="aba">
+  <h2>Turmas</h2>
+  <select id="selectTurma" onchange="trocarTurma()"></select>
+  <div class="acoes-turma">
+  <button onclick="editarTurma()">✏️ Editar Turma</button>
+  <button onclick="editarAlunos()">👥 Editar Alunos</button>
+  <button onclick="clonarTurma()">📄 Clonar Turma</button>
+  <button onclick="excluirTurma()" style="background:#e74c3c;color:white">
+    ❌ Excluir Turma
+  </button>
+</div>
+
+  <button onclick="editarTurma()">✏️ Editar Turma</button>
+  <p>Turma ativa: <strong id="turmaAtivaNome">Nenhuma</strong></p>
+  <input id="turmaNome" placeholder="Nome da turma">
+  <textarea id="alunosTexto" placeholder="Um aluno por linha"></textarea>
+  <button onclick="salvarTurma()">Salvar Turma</button>
+</div>
+
+<div id="aulas" class="aba">
+  <h2>Aulas</h2>
+  <input id="aula" placeholder="Nome da aula">
+  <input id="conteudo" placeholder="Conteúdo">
+  <input id="data" type="date">
+  <button onclick="salvarAula()">Salvar Aula</button>
+  <ul id="listaAulas"></ul>
+</div>
+
+<div id="acompanhamento" class="aba">
+  <h2>Acompanhamento</h2>
+  <div id="alunos"></div>
+  <button onclick="salvarAcompanhamento()">Salvar acompanhamento</button>
+</div>
+
+<div id="relatorios" class="aba">
+  <h2>Relatório</h2>
+  <p>Turma: <strong id="nomeTurmaRelatorio"></strong></p>
+  <table border="1">
+    <thead>
+      <tr id="cabecalhoRelatorio"></tr>
+    </thead>
+    <tbody id="tabelaTurma"></tbody>
+  </table>
+</div>
+
+<link rel="stylesheet" href="style.css">
+<script src="js/app.js"></script>
+</body>
+</html>

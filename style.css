@@ -1,0 +1,426 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* BASE DO SITE */
+body {
+  background: #f4f6f8;
+  padding: 12px;
+  font-size: 16px;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+/*AJUSTE VISUAL*/
+#login input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+/* ABAS */
+.abas button {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+    background: #aad8f7;
+    color: rgb(0, 0, 0);
+}
+
+.abas button:hover {
+    background: #2980b9;
+}
+
+/* CONTEÚDO DAS ABAS */
+.aba {
+    display: none;
+    background: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+
+table {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-collapse: collapse;
+}
+
+th {
+    background: #011830;
+    color: white;
+}
+
+td, th {
+    text-align: center;
+    padding: 5px;
+}
+
+.conceito-A  { background:#2ecc71; color:white; font-weight:bold; }
+.conceito-B  { background:#3498db; color:white; font-weight:bold; }
+.conceito-C  { background:#f1c40f; color:black; font-weight:bold; }
+.conceito-D  { background:#e67e22; color:white; font-weight:bold; }
+.conceito-E  { background:#9b59b6; color:white; font-weight:bold; }
+.conceito-SR { background:#e74c3c; color:white; font-weight:bold; }
+.conceito-F  { background:#7f8c8d; color:white; font-weight:bold; }
+.conceito--  { background:#ecf0f1; color:#555; }
+
+td[class^="conceito-"] {
+    text-align: center;
+}
+
+
+/*CSS RESPONSIVO MOBILE*/
+@media (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    nav button {
+        width: 100%;
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+
+    #alunos div {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        background: #f9f9f9;
+    }
+
+    #alunos select {
+        font-size: 18px;
+        padding: 8px;
+        margin-top: 6px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 6px;
+    }
+}
+
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* CONTAINER GERAL */
+body {
+  margin: 0;
+  padding: 10px;
+  background: #f4f6f8;
+}
+
+/* ABAS */
+.aba {
+  background: #fff;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+/* BOTÕES */
+button {
+  background: #2c7be5;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* LISTAS */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background: #eef1f4;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+}
+
+/* ACOMPANHAMENTO */
+#alunos > div {
+  display: flex;
+  flex-direction: column;
+  background: #f9fafb;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* TABELA RESPONSIVA */
+.tabela-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+th {
+  background: #2c7be5;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+/* CORES DOS CONCEITOS */
+.conceito-A { background: #d4edda; }
+.conceito-B { background: #cce5ff; }
+.conceito-C { background: #fff3cd; }
+.conceito-D { background: #f8d7da; }
+.conceito-E { background: #f5c6cb; }
+.conceito-SR { background: #e2e3e5; }
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  body {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  #alunos > div {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #alunos select {
+    width: 120px;
+  }
+}
+
+.card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+/*CSS RESPONSIVO*/
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+    width: 100%;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    background: #fff;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    font-size: 16px;
+  }
+
+  td button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+/* === VISIBILIDADE === */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+.editar-aula-box {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.editar-aula-box select,
+.editar-aula-box button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+
+  table {
+    display: none;
+  }
+
+  #relatorioMobile {
+    display: block;
+    padding: 10px;
+  }
+
+  .card-aula {
+    background: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  .card-aula h3 {
+    margin: 0 0 8px;
+    color: #2c3e50;
+  }
+
+  .card-aula select,
+  .card-aula button {
+    width: 100%;
+    margin-top: 6px;
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+.pesos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.pesos label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.select-mobile {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+}
+
+.btn-principal {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background: #2d7be5;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-principal:active {
+    opacity: 0.85;
+}
+
+/* DESATIVAR CARDS DE AULA */
+.card-aula {
+  display: none;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .card-aula {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .editar-aula-box {
+    display: none;
+  }
+}
+
+/* CONTROLE DE ABAS */
+.aba {
+  display: none;
+}
+
+.aba.ativa {
+  display: block;
+}
+
+/* BOTÕES */
+.abas {
+  margin-bottom: 20px;
+}
+
+.abas button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
