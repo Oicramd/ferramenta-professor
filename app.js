@@ -489,6 +489,8 @@ window.salvarTurma = salvarTurma;
 window.salvarAula = salvarAula;
 window.salvarAcompanhamento = salvarAcompanhamento;
 window.trocarTurma = trocarTurma;
+window.login = login;
+window.logout = logout;
 
 /**********************
  * INIT
@@ -514,4 +516,3 @@ window.onload = () => {
 
   mostrarAba("inicio");
 };
-
