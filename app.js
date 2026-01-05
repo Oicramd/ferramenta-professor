@@ -482,6 +482,14 @@ function gerarRelatorioTurma() {
   });
 }
 
+// 🔓 EXPOR FUNÇÕES PARA O HTML (necessário no mobile)
+window.mostrarAba = mostrarAba;
+window.salvarUnidade = salvarUnidade;
+window.salvarTurma = salvarTurma;
+window.salvarAula = salvarAula;
+window.salvarAcompanhamento = salvarAcompanhamento;
+window.trocarTurma = trocarTurma;
+
 /**********************
  * INIT
  **********************/
@@ -506,3 +514,4 @@ window.onload = () => {
 
   mostrarAba("inicio");
 };
+
